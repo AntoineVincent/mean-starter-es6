@@ -16,6 +16,8 @@ class contactController {
         this.contactService.create(this.contact).then(() => {
             this.contact = '';
             this.load()
+        }, (err) => {
+            this.err = "Please fill a valid phone number";
         })
     }
 

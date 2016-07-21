@@ -1,5 +1,6 @@
 import express from 'express';
 import Contact from '../models/contact.js';
+import Auth from '../middlewares/authorization.js';
 
 let router = express.Router();
 
@@ -17,6 +18,6 @@ module.exports = (app) => {
 
     router.delete('/:id', contact.delete);
 
-    app.use('/contacts', router);
+    app.use('/contacts', Auth.hasAuthorization, router);
 
 }

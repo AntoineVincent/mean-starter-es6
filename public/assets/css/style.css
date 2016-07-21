@@ -14,3 +14,9 @@
 .navbar-brand:hover img {
     transform: rotate(360deg);
 }
+.error-number {
+    text-align: center;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}

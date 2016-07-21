@@ -10,9 +10,11 @@
   "author": "Jean-Baptiste Pasquier",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^0.8.7",
     "body-parser": "",
     "cors": "",
     "express": "",
+    "jsonwebtoken": "",
     "method-override": "",
     "mongoose": "",
     "morgan": ""

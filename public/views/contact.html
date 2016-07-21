@@ -1,10 +1,11 @@
 <div class="row">
     <div class="col-xs-12 col-md-10 col-md-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
         <h2>Ajouter un contact</h2>
+        <h3 class="error-number"> {{vm.err}} </h3>
         <form class="form-inline">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nom" ng-model='vm.contact.nom'>
-                <input type="text" class="form-control" placeholder="Téléphone" ng-model='vm.contact.phone'>
+                <input type="text" class="form-control" id="nom" placeholder="Nom" ng-model='vm.contact.nom'>
+                <input type="text" class="form-control" id="numero" placeholder="Téléphone" ng-model='vm.contact.phone' ng-required='true'>
             </div>
             <button ng-click='vm.create()' class="btn btn-default">Add</button>
         </form>
